@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'plugin:tailwindcss/recommended',
     'plugin:vue/vue3-recommended',
   ],
   rules: {

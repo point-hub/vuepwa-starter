@@ -6,6 +6,7 @@ specifiers:
   autoprefixer: ^10.4.5
   cypress: ^9.5.4
   eslint: ^8.14.0
+  eslint-plugin-tailwindcss: ^3.5.0
   eslint-plugin-vue: ^8.7.1
   postcss: ^8.4.12
   tailwindcss: ^3.0.24
@@ -25,6 +26,7 @@ devDependencies:
   autoprefixer: 10.4.5_postcss@8.4.12
   cypress: 9.5.4
   eslint: 8.14.0
+  eslint-plugin-tailwindcss: 3.5.0
   eslint-plugin-vue: 8.7.1_eslint@8.14.0
   postcss: 8.4.12
   tailwindcss: 3.0.24
@@ -1012,6 +1014,17 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-plugin-tailwindcss/3.5.0:
+    resolution: {integrity: sha512-m1NyKX1qii3arb+zWrsNO5R15b27aaEm6m1ie9JM9a6yBrU9Q8H62obzT/U8PSITIucMY864uxljV8MiP7H6xg==}
+    engines: {node: '>=12.13.0'}
+    dependencies:
+      fast-glob: 3.2.11
+      postcss: 8.4.12
+      tailwindcss: 3.0.24
+    transitivePeerDependencies:
+      - ts-node
     dev: true
 
   /eslint-plugin-vue/8.7.1_eslint@8.14.0:
