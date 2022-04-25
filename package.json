@@ -7,6 +7,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "build:staging": "vue-tsc --noEmit && vite build --mode staging --outDir dist-staging",
     "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test:e2e": "cypress open"
   },
   "dependencies": {
@@ -18,6 +20,8 @@
     "@vitejs/plugin-vue": "^2.3.1",
     "autoprefixer": "^10.4.5",
     "cypress": "^9.5.4",
+    "eslint": "^8.14.0",
+    "eslint-plugin-vue": "^8.7.1",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.5.4",
