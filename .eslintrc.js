@@ -1,9 +1,12 @@
 module.exports = {
+  root: true,
   extends: [
     'plugin:tailwindcss/recommended',
     'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {
+    'prettier/prettier': ['error', { singleQuote: true }],
   },
   overrides: [
     {
@@ -13,4 +16,4 @@ module.exports = {
       },
     },
   ],
-}
+};

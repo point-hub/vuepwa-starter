@@ -9,6 +9,8 @@ This starter template built for pointhub project to create frontend apps more ea
 - [TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript
 - [pnpm](https://pnpm.io/) creates a non-flat node_modules by default, so code has no access to arbitrary packages
 - [Cypress](https://cypress.io/) E2E Testing
+- [ESLint](https://eslint.org/) Code Linting
+- [Prettier](https://prettier.io/) Code Formatting
 - [VS Code](https://code.visualstudio.com/) Recommended IDE
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 IDE support
