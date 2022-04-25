@@ -1,22 +1,31 @@
-# Vue 3 + TypeScript + Vite
+# Vue PWA Starter Template
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
-
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+This starter template built for pointhub project to create frontend apps more easily, along with some good practices that I have learned. It's strongly opinionated, but feel free to tweak it to your needs.
 
 ## Features
+
+### Dev tools
+- [Vite](https://vitejs.dev/) Next Generation Frontend Tooling
+- [TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript
+- [pnpm](https://pnpm.io/) creates a non-flat node_modules by default, so code has no access to arbitrary packages
+- [VS Code](https://code.visualstudio.com/) Recommended IDE
+- [VS Code Extensions](./.vscode/extensions.json)
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 IDE support
+
+### Plugins
+
+- [Vue Router](https://github.com/vuejs/vue-router) The official router for Vue.js.
 
 ### UI Frameworks
 
 - [Tailwind CSS v3](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML
+
+## Separation of Concerns
+
+- Create separate folder for each module and place them under `/src/modules/` folder
+- The following modules files & folders
+    - `assets/`
+    - `components/`
+    - `layouts/`
+    - `pages/`
+    - `routes.ts`

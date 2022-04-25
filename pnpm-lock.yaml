@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^17.0.26
   '@vitejs/plugin-vue': ^2.3.1
   autoprefixer: ^10.4.5
   postcss: ^8.4.12
@@ -8,12 +9,15 @@ specifiers:
   typescript: ^4.5.4
   vite: ^2.9.5
   vue: ^3.2.25
+  vue-router: ^4.0.14
   vue-tsc: ^0.34.7
 
 dependencies:
   vue: 3.2.33
+  vue-router: 4.0.14_vue@3.2.33
 
 devDependencies:
+  '@types/node': 17.0.26
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.5+vue@3.2.33
   autoprefixer: 10.4.5_postcss@8.4.12
   postcss: 8.4.12
@@ -48,6 +52,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@types/node/17.0.26:
+    resolution: {integrity: sha512-z/FG/6DUO7pnze3AE3TBGIjGGKkvCcGcWINe1C7cADY8hKLJPDYpzsNE37uExQ4md5RFtTCvg+M8Mu1Enyeg2A==}
     dev: true
 
   /@vitejs/plugin-vue/2.3.1_vite@2.9.5+vue@3.2.33:
@@ -124,6 +132,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.33
       '@vue/shared': 3.2.33
+
+  /@vue/devtools-api/6.1.4:
+    resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
+    dev: false
 
   /@vue/reactivity-transform/3.2.33:
     resolution: {integrity: sha512-4UL5KOIvSQb254aqenW4q34qMXbfZcmEsV/yVidLUgvwYQQ/D21bGX3DlgPUGI3c4C+iOnNmDCkIxkILoX/Pyw==}
@@ -859,6 +871,15 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /vue-router/4.0.14_vue@3.2.33:
+    resolution: {integrity: sha512-wAO6zF9zxA3u+7AkMPqw9LjoUCjSxfFvINQj3E/DceTt6uEz1XZLraDhdg2EYmvVwTBSGlLYsUw8bDmx0754Mw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      vue: 3.2.33
+    dev: false
 
   /vue-tsc/0.34.10_typescript@4.6.3:
     resolution: {integrity: sha512-rWU4SjDqk9ylQN2hbnyP+rEu8W2a712DWUmciX6rDnId1m8sN/cuypTKjWjHHjaBLWNKULoEakRTOvrQ4ainhw==}
