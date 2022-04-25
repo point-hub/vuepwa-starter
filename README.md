@@ -29,3 +29,7 @@ This starter template built for pointhub project to create frontend apps more ea
     - `layouts/`
     - `pages/`
     - `routes.ts`
+
+### Deploy on Netlify
+
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
