@@ -10,5 +10,5 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <div>Home</div>
-  <p>A {{ name }}</p>
+  <p>GGG {{ name }}</p>
 </template>
