@@ -14,6 +14,9 @@
       "esnext",
       "dom"
     ],
+    "types": [
+      "vite-plugin-pwa/client"
+    ],
     "skipLibCheck": true
   },
   "include": [
@@ -27,7 +30,8 @@
     "dist-staging",
     "node_modules",
     "cypress",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "**/*.worker.ts"
   ],
   "references": [
     {
