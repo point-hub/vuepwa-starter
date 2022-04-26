@@ -1,8 +1,9 @@
 module.exports = {
   root: true,
   extends: [
-    'plugin:tailwindcss/recommended',
     'plugin:vue/vue3-recommended',
+    '@vue/eslint-config-typescript',
+    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {
