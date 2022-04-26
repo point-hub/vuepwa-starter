@@ -1,10 +1,10 @@
 describe('The Home Page', () => {
   beforeEach(() => {
-    cy.visit('/')
-  })
+    cy.visit('/');
+  });
 
   it('should contains "Home" in home page', () => {
-    cy.url().should('eq', Cypress.config('baseUrl') + '/')
-    cy.contains('Home').should('exist')
-  })
-})
+    cy.url().should('eq', Cypress.config('baseUrl') + '/');
+    cy.contains('Home').should('exist');
+  });
+});

@@ -1,3 +1,11 @@
 {
-  "baseUrl": "http://localhost:8080"
+  "baseUrl": "http://localhost:8080",
+  "component": {
+    "componentFolder": "src",
+    "supportFile": "cypress/support/component.js",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}"
+  },
+  "e2e": {
+    "supportFile": "cypress/support/e2e.js"
+  }
 }

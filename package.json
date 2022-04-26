@@ -9,6 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "test": "cypress open",
+    "test:ct": "cypress open-ct",
     "test:e2e": "cypress open"
   },
   "dependencies": {
@@ -16,13 +18,16 @@
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^2.2.2",
+    "@cypress/vue": "^3.1.1",
     "@types/node": "^17.0.26",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/eslint-config-typescript": "^10.0.0",
     "autoprefixer": "^10.4.5",
-    "cypress": "^9.5.4",
+    "cypress": "^9.6.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-tailwindcss": "^3.5.0",
     "eslint-plugin-vue": "^8.7.1",

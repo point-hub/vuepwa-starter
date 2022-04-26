@@ -26,7 +26,8 @@
     "dist",
     "dist-staging",
     "node_modules",
-    "cypress"
+    "cypress",
+    "src/**/*.spec.ts"
   ],
   "references": [
     {

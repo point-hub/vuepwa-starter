@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript',
+    'plugin:cypress/recommended',
     'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended',
   ],

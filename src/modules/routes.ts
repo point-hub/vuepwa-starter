@@ -1,5 +1,3 @@
-import baseRoutes from './base/routes'
+import baseRoutes from './base/routes';
 
-export default [
-  ...baseRoutes
-]
+export default [...baseRoutes];
