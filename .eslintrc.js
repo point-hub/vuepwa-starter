@@ -9,6 +9,7 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true }],
+    'tailwindcss/no-custom-classname': 'off',
   },
   overrides: [
     {
