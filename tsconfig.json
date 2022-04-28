@@ -12,7 +12,8 @@
     "esModuleInterop": true,
     "lib": [
       "esnext",
-      "dom"
+      "dom",
+      "WebWorker"
     ],
     "types": [
       "vite-plugin-pwa/client"
@@ -30,7 +31,8 @@
     "dist-staging",
     "node_modules",
     "cypress",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "src/sw.ts"
   ],
   "references": [
     {

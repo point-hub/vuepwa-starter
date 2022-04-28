@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import { useRegisterSW } from 'virtual:pwa-register/vue';
 
-const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW();
+const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW({
+  immediate: true,
+  onRegistered(r) {
+    r &&
+      setTimeout(async () => {
+        // auto update sw to show need refresh immediatelly
+        await r.update();
+      }, 60 * 1000);
+  },
+});
 
 const close = async () => {
   offlineReady.value = false;
