@@ -23,6 +23,10 @@ specifiers:
   vue: ^3.2.25
   vue-router: ^4.0.14
   vue-tsc: ^0.34.7
+  workbox-core: ^6.5.3
+  workbox-precaching: ^6.5.3
+  workbox-routing: ^6.5.3
+  workbox-window: ^6.5.3
 
 dependencies:
   vue: 3.2.33
@@ -49,6 +53,10 @@ devDependencies:
   vite: 2.9.5
   vite-plugin-pwa: 0.12.0_vite@2.9.5
   vue-tsc: 0.34.10_typescript@4.6.3
+  workbox-core: 6.5.3
+  workbox-precaching: 6.5.3
+  workbox-routing: 6.5.3
+  workbox-window: 6.5.3
 
 packages:
 

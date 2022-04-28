@@ -1,11 +1,15 @@
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { VitePWA } from 'vite-plugin-pwa';
+import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa';
 
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-  const pwaConfig = {
+  const pwaConfig: Partial<VitePWAOptions> = {
+    strategies: 'injectManifest',
+    base: '/',
+    srcDir: 'src',
+    filename: 'sw.ts',
     includeAssets: [
       'favicon.svg',
       'favicon.ico',

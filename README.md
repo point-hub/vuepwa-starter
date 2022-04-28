@@ -18,6 +18,7 @@ This starter template built for pointhub project to create frontend apps more ea
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router) The official router for Vue.js.
+- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) Progressive web app
 
 ### UI Frameworks
 
