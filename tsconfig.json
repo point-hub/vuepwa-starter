@@ -25,14 +25,14 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-  ],
+, "src/sw.js"  ],
   "exclude": [
     "dist",
     "dist-staging",
     "node_modules",
     "cypress",
     "src/**/*.spec.ts",
-    "src/sw.ts"
+    "src/sw.js"
   ],
   "references": [
     {
