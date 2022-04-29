@@ -20,28 +20,24 @@ cleanupOutdatedCaches();
 // to allow work offline
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
 
-//Web Push Notifications//
-let click_open_url: any;
-self.addEventListener('push', function (event) {
-  const push_message = event.data?.json();
-  // push notification can send event.data.json() as well
-  click_open_url = push_message.notification.data.url;
+// Web Push Notifications
+self.addEventListener('push', function (e) {
   const options = {
-    body: push_message.notification.body,
-    icon: push_message.notification.icon,
-    image: push_message.notification.image,
-    tag: 'alert',
+    body: 'This notification was generated from a push!',
+    icon: 'images/example.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: '2',
+    },
+    actions: [
+      {
+        action: 'explore',
+        title: 'Explore this new world',
+        icon: 'images/checkmark.png',
+      },
+      { action: 'close', title: 'Close', icon: 'images/xmark.png' },
+    ],
   };
-  event.waitUntil(
-    self.registration.showNotification(push_message.notification.title, options)
-  );
-});
-
-self.addEventListener('notificationclick', function (event) {
-  const clickedNotification = event.notification;
-  clickedNotification.close();
-  if (click_open_url) {
-    const promiseChain = clients.openWindow(click_open_url);
-    event.waitUntil(promiseChain);
-  }
+  e.waitUntil(self.registration.showNotification('Hello world!', options));
 });

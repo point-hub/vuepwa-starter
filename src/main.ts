@@ -12,7 +12,6 @@ if ('serviceWorker' in navigator) {
       reg.pushManager.getSubscription().then(function (sub) {
         if (sub === null) {
           // Update UI to ask user to register for Push
-          subscribeUser();
           console.log('Not subscribed to push service!');
         } else {
           // We have a subscription, update the database
