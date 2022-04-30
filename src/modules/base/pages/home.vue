@@ -8,7 +8,9 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 addEventListener('load', async () => {
-  let sw = await navigator.serviceWorker.register('./sw.js');
+  let sw = await navigator.serviceWorker.register(
+    './push-api/pointhub/pointhubPAServiceWorker.js'
+  );
   console.log(sw);
 });
 
