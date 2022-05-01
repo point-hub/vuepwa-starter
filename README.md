@@ -14,6 +14,7 @@ This starter template built for pointhub project to create frontend apps more ea
 - [VS Code](https://code.visualstudio.com/) Recommended IDE
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 IDE support
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) Integrates ESLint into VS Code
 
 ### Plugins
 
